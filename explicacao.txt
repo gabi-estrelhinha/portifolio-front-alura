@@ -1,0 +1,19 @@
+<!DOCTYPE html><!-- certifica que é um documento HTML5 -->
+<html lang="en"><!-- nossa page starts here, with language set to English -->
+    <head><!--meta tags infos sobre o documento -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio</title>
+    </head>
+    <body><!--corpo do documento, local onde estão os conteúdos visíveis -->
+        <h1>Hi, I'm Gabriela Darezzo</h1><!--título principal da página -->
+        <h2>and my profession is Software Engineer</h2>
+        <p>Welcomes to my portfolio!</p>
+        <img src="/html-logo-main/gabi-perfil.jpeg" alt="Foto de perfil de Gabriela Darezzo"><!--imagem de perfil -->
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </body>
+</html>
