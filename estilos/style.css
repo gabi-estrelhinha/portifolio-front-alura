@@ -29,7 +29,7 @@ body{
 
 .cabecalho__menu{
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .cabecalho__menu__link{
@@ -49,11 +49,11 @@ body{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    gap: 82px;
+    gap: 5rem;
 }
 
 .container__textos{
-    gap: 40px;
+    gap: 2.5rem;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -78,27 +78,28 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
-.container__links__subtitulo{
+.container__links__subtitulo, a{
     font-family: var(--fonte-secundaria);
     font-weight: 400;
     font-size: 1.5rem;
+    color: var(--cor-secundaria);
 }
 
 .container__links__link{
     display: flex; /* eu quero que os meus elementos tenham disposicao diferente */
     justify-content: center;  /* por padrao ta row, ent essse cod tras para o centro */
-    gap: 16px; /* espaco entre os elementos */
-    border: 2px solid var(--cor-terciaria);
+    gap: 1rem; /* espaco entre os elementos */
+    border: 0.2rem solid var(--cor-terciaria);
     text-decoration: none;
     color: var(--cor-secundaria);
-    width: 50%;
+    width: 40%;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 2rem;
     font-size: 1.5rem;
-    padding:  21.5px 0px;
+    padding:  1.4rem;
     font-family: var(--fonte-secundaria);
     font-weight: bold;
 }
@@ -111,7 +112,7 @@ body{
 .rodape{
    color: var(--cor-primaria);
    background-color: var(--cor-terciaria);
-   padding: 24px;
+   padding: 1.5rem;
    text-align: center;
    font-family: var(--fonte-secundaria);
    font-weight: 600;
@@ -131,15 +132,25 @@ body{
 
     .container{
         flex-direction: column-reverse;
+        display: flex;
         padding: 5%;
     }
-    .container__conteudo__texto{
-        width: auto;
+    .container__textos{
+        width: 80%;
+        display: flex;
+
+    }
+    .container__textos__titulo{
+        font-size: 1.5rem;
     }
     .cabecalho{
         padding: 10%;
     }
     .cabecalho__menu{
+        gap: 4rem;
         justify-content: center;
+    }
+    .container__textos__paragrafo{
+        font-size: 1.3rem;
     }
 }
