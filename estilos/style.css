@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+    --cor-primaria:#000; /* background-color: #preto; */
+    --cor-secundaria:#f6f6f6; /* background-color: #branco; */
+    --cor-terciaria:#22D4FD; /* background-color: #ciano; */
+    --cor-hover:#272727;/* background-color: #hoover; */
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box; /* faz com que elementos nn saiam do body */
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family:var(--fonte-secundaria);
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.container{
+    padding: 5% 15%; /*espaço entre os elementos dentro da div */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.container__textos{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 615px;
+}
+
+.container__textos__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 36px;
+}
+
+.container__textos__paragrafo{
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+}
+
+.hover-gabi:hover{
+    color: var(--cor-terciaria);
+}
+
+.container__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.container__links__subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.container__links__link{
+    display: flex; /* eu quero que os meus elementos tenham disposicao diferente */
+    justify-content: center;  /* por padrao ta row, ent essse cod tras para o centro */
+    gap: 16px; /* espaco entre os elementos */
+    border: 2px solid var(--cor-terciaria);
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    padding:  21.5px 0px;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+}
+
+.container__links__link:hover{
+    background-color: var(--cor-hover);
+    transition: 0.3s;
+}
+
+.rodape{
+   color: var(--cor-primaria);
+   background-color: var(--cor-terciaria);
+   padding: 24px;
+   text-align: center;
+   font-family: var(--fonte-secundaria);
+   font-weight: 600;
+}
+
+.container__conteudo__texto a{
+    text-decoration: none;
+    color: var(--cor-terciaria)
+}

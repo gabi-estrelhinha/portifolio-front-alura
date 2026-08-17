@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estilos/style.css">
     <title>Portfólio</title>
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a> 
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="cv.html">Currículo</a>
+        </nav>
     </header>
 
     <main class="container">
@@ -18,13 +23,27 @@
                 <strong class="titulo-destaque">com um Front-end de qualidade!</strong>
             </h1>
 
-            <p class="container__textos__paragrafo">Olá! Sou Gabriela, desenvolvedora Front-end com especialidade em React, HTML e CSS. 
+            <p class="container__textos__paragrafo">Olá! Sou <span class="hover-gabi">Gabriela Darezzo Gomes</span>, desenvolvedora Front-end com especialidade em React, HTML e CSS. 
                 Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
 
             <div class="container__links">
-                
-                <a class="container__links__link" href="https://www.instagram.com/gabriela.darezzo" target="_blank"> Instagram</a>
-                <a class="container__links__link" href="https://github.com/gabi-estrelhinha" target="_blank"> Github</a>
+
+                <h2 class="container__links__subtitulo">Acesse minhas redes:</h2>
+            
+                <a class="container__links__link" href="https://github.com/gabi-estrelhinha" target="_blank">
+                    <img src="/icons/github.png" alt="Logo do Github">
+                    Github
+                </a>
+
+                <a class="container__links__link" href="https://www.linkedin.com/in/gabriela-darezzo" target="_blank">
+                    <img src="/icons/linkedin.png" alt="Logo do Linkedin">
+                    Linkedin
+                </a>
+
+                <a class="container__links__link" href="https://twitch.com/bibidarezzo" target="_blank">
+                    <img src="/icons/twitch.png" alt="Logo do Twitch">
+                    Twitch
+                </a>
 
             </div>
         </section>
@@ -33,8 +52,8 @@
 
     </main>
 
-    <footer>
-
+    <footer class="rodape">
+        <p>Desenvolvido por Gabriela Darezzo Gomes.</p>
     </footer>
 </body>
 </html>
