@@ -15,6 +15,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* <- aqui, não só na body */
+}
+body, html{
+    overflow-x: hidden; /* faz com que a barra de rolagem horizontal não apareça */
 }
 
 body{
@@ -29,7 +33,7 @@ body{
 
 .cabecalho__menu{
     display: flex;
-    gap: 5rem;
+    gap: 6rem;
 }
 
 .cabecalho__menu__link{
@@ -86,6 +90,7 @@ body{
     font-weight: 400;
     font-size: 1.5rem;
     color: var(--cor-secundaria);
+    text-align: center;
 }
 
 .container__links__link{
@@ -95,13 +100,13 @@ body{
     border: 0.2rem solid var(--cor-terciaria);
     text-decoration: none;
     color: var(--cor-secundaria);
-    width: 40%;
     text-align: center;
     border-radius: 2rem;
     font-size: 1.5rem;
-    padding:  1.4rem;
+    padding:  1rem;
     font-family: var(--fonte-secundaria);
     font-weight: bold;
+    width: 13rem; 
 }
 
 .container__links__link:hover{
@@ -117,6 +122,7 @@ body{
    font-family: var(--fonte-secundaria);
    font-weight: 600;
    font-size: 1.5rem;
+   width: 100%;
 }
 
 .container__conteudo__texto a{
@@ -129,7 +135,6 @@ body{
 }
 
 @media (max-width: 1200px){
-
     .container{
         flex-direction: column-reverse;
         display: flex;
@@ -142,15 +147,22 @@ body{
     }
     .container__textos__titulo{
         font-size: 1.5rem;
+        text-align: center;
     }
     .cabecalho{
         padding: 10%;
     }
     .cabecalho__menu{
-        gap: 4rem;
+        gap: 1rem;
         justify-content: center;
+        width: 100%;
     }
     .container__textos__paragrafo{
         font-size: 1.3rem;
+    }
+    .container__links__link{
+        width: 11rem;
+        font-size: 1.2rem;
+        padding: 0.6rem;
     }
 }
